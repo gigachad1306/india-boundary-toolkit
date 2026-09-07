@@ -1,0 +1,17 @@
+[general]
+name=India Boundary & CRS Toolkit
+qgisMinimumVersion=3.22
+description=Load a maintained India admin boundary layer with correct state/district IDs, plus Processing tools for fixing mis-declared/awkward source CRS (e.g. Lambert Conformal Conic district files) and for spatial-joining points or small polygons to admin boundaries with a nearest-neighbour fallback for slivers/edge cases.
+version=0.1.0
+author=Devesh
+email=deveshchallengers@gmail.com
+
+about=Grew out of recurring pain points rebuilding India district pipelines: LCC-projected source data with unreliable CRS metadata, and small/edge districts that fall through a strict point-in-polygon join. Ships two Processing algorithms (Reproject / Fix Source CRS, Assign Admin IDs by Boundary) and a toolbar action to load a configured boundary GeoPackage (state + district, with an ID override table so splits like Ladakh/J&K are handled consistently) into the project.
+
+tracker=https://github.com/yourname/india-boundary-toolkit/issues
+repository=https://github.com/yourname/india-boundary-toolkit
+category=Vector
+tags=hydrology,India,boundaries,districts,CRS,reprojection,spatial join
+experimental=True
+deprecated=False
+icon=icon.png
